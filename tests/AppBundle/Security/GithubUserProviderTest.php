@@ -97,7 +97,7 @@ class GithubUserProviderTest extends TestCase
 
         $provider = new GithubUserProvider($this->client,$this->serializer);
 
-        $this->expectException('LogicException');
+        $this->expectException('LogicExceptionn');
 
         $user = $provider->loadUserByUsername('rachid');
     }
